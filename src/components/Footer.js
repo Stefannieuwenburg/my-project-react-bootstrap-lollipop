@@ -1,24 +1,24 @@
-import React from 'react';
+import { Container } from "react-bootstrap";
+import React from "react";
 import { FaLinkedinIn, FaFacebook, FaGithub } from "react-icons/fa";
 
 const Footer = () => {
     return (
-        <>
-            <div className="text-center">
+        <footer>
+            <Container className="text-center">
                 <div>
                     {" "}
-                    <p style={{ fontSize: "18px" }}>
-                        Copyright &copy;2022 by Me
+                    <p style={{ fontSize: "15px" }}>
+                        Copyright &copy;{new Date().getFullYear()} by Me
                     </p>
                     <FaLinkedinIn
-                        style={{ fontSize: "18px", color: "grey" }}
+                        style={{ fontSize: "30px", color: "grey" }}
                     ></FaLinkedinIn>
-                    <FaFacebook style={{ fontSize: "18px", color: "grey" }} />
-                    <FaGithub style={{ fontSize: "18px", color: "grey" }} />
+                    <FaFacebook style={{ fontSize: "30px", color: "grey" }} />
+                    <FaGithub style={{ fontSize: "30px", color: "grey" }} />
                 </div>
-                
-            </div>
-        </>
+            </Container>
+        </footer>
     );
-}
+};
 export default Footer;
